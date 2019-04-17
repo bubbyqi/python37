@@ -2,18 +2,16 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-   File Name：     ordereddict
+   File Name：     sort
    Description :
    Author :       Administrator
-   date：          2019/4/12 16:14
+   date：          2019/4/17 10:45
 -------------------------------------------------
    Change Activity:
-                   16:14:
+                   10:45:
 -------------------------------------------------
 """
 __author__ = 'Administrator'
-from collections import OrderedDict
-d=dict([('a',1),('b',2),('c',3)])
-print(d)
-od=OrderedDict([('a',1),('b',2),('c',3)])
-print(od)
+basket=['apple','orange','apple','pear','orange','banana']
+for i in sorted(set(basket)):
+    print(i)

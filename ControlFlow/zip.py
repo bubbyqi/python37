@@ -2,18 +2,17 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-   File Name：     ordereddict
+   File Name：     zip
    Description :
    Author :       Administrator
-   date：          2019/4/12 16:14
+   date：          2019/4/17 10:37
 -------------------------------------------------
    Change Activity:
-                   16:14:
+                   10:37:
 -------------------------------------------------
 """
 __author__ = 'Administrator'
-from collections import OrderedDict
-d=dict([('a',1),('b',2),('c',3)])
-print(d)
-od=OrderedDict([('a',1),('b',2),('c',3)])
-print(od)
+questions=['name','question','favorite color']
+answers=['lancelot','the holy grail','blue']
+for q,a in zip(questions,answers):
+    print('what is your {0}? it is {1}.'.format(q,a))

@@ -2,18 +2,20 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-   File Name：     ordereddict
+   File Name：     gen_send
    Description :
    Author :       Administrator
-   date：          2019/4/12 16:14
+   date：          2019/4/15 15:10
 -------------------------------------------------
    Change Activity:
-                   16:14:
+                   15:10:
 -------------------------------------------------
 """
 __author__ = 'Administrator'
-from collections import OrderedDict
-d=dict([('a',1),('b',2),('c',3)])
-print(d)
-od=OrderedDict([('a',1),('b',2),('c',3)])
-print(od)
+def gen():
+    while True:
+        s = yield
+        print(s)
+
+g=gen()
+g.send("bubbyqi")

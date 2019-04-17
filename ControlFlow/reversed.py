@@ -2,18 +2,15 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-   File Name：     ordereddict
+   File Name：     reversed
    Description :
    Author :       Administrator
-   date：          2019/4/12 16:14
+   date：          2019/4/17 10:43
 -------------------------------------------------
    Change Activity:
-                   16:14:
+                   10:43:
 -------------------------------------------------
 """
 __author__ = 'Administrator'
-from collections import OrderedDict
-d=dict([('a',1),('b',2),('c',3)])
-print(d)
-od=OrderedDict([('a',1),('b',2),('c',3)])
-print(od)
+for i in reversed(range(1,10,2)):
+    print(i)

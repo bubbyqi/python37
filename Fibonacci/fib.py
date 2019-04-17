@@ -2,18 +2,17 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-   File Name：     ordereddict
+   File Name：     fib
    Description :
    Author :       Administrator
-   date：          2019/4/12 16:14
+   date：          2019/4/17 10:14
 -------------------------------------------------
    Change Activity:
-                   16:14:
+                   10:14:
 -------------------------------------------------
 """
 __author__ = 'Administrator'
-from collections import OrderedDict
-d=dict([('a',1),('b',2),('c',3)])
-print(d)
-od=OrderedDict([('a',1),('b',2),('c',3)])
-print(od)
+a,b=0,1
+while a < 10:
+    print(a)
+    a,b=b,a+b

@@ -2,18 +2,16 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-   File Name：     ordereddict
+   File Name：     for
    Description :
    Author :       Administrator
-   date：          2019/4/12 16:14
+   date：          2019/4/17 10:26
 -------------------------------------------------
    Change Activity:
-                   16:14:
+                   10:26:
 -------------------------------------------------
 """
 __author__ = 'Administrator'
-from collections import OrderedDict
-d=dict([('a',1),('b',2),('c',3)])
-print(d)
-od=OrderedDict([('a',1),('b',2),('c',3)])
-print(od)
+a=['Mary','had','a','little','lamb']
+for i in range(len(a)):
+    print(i,a[i])
